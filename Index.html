@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Safe - Segurança Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🔐 Web Safe</h1>
+    <p>Segurança de senhas e análise de sites</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>🔑 Teste sua senha</h2>
+      <input type="password" id="senha" placeholder="Digite sua senha">
+      <button onclick="avaliarSenha()">Analisar</button>
+
+      <p id="resultadoSenha"></p>
+    </section>
+
+    <section class="card">
+      <h2>🌐 Comparação de sites</h2>
+      <button onclick="compararSites()">Analisar exemplo</button>
+      <p id="resultadoSites"></p>
+    </section>
+
+    <section class="card">
+      <h2>🧠 Dicas de segurança</h2>
+      <ul>
+        <li>Use pelo menos 8 caracteres</li>
+        <li>Combine letras, números e símbolos</li>
+        <li>Evite dados pessoais</li>
+        <li>Não repita senhas em sites diferentes</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Projeto educacional - Start by Alura</p>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
