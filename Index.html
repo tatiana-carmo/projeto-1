@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Safe - Segurança Digital</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Quiz de Futebol</title>
 </head>
 
 <body>
-  <header>
-    <h1>🔐 Web Safe</h1>
-    <p>Segurança de senhas e análise de sites</p>
-  </header>
 
-  <main>
+    <div class="caixa-principal">
 
-    <section class="card">
-      <h2>🔑 Teste sua senha</h2>
-      <input type="password" id="senha" placeholder="Digite sua senha">
-      <button onclick="avaliarSenha()">Analisar</button>
+        <h1>⚽ Quiz de Futebol</h1>
 
-      <p id="resultadoSenha"></p>
-    </section>
+        <div class="tela-inicial">
 
-    <section class="card">
-      <h2>🌐 Comparação de sites</h2>
-      <button onclick="compararSites()">Analisar exemplo</button>
-      <p id="resultadoSites"></p>
-    </section>
+            <p>
+                Bem-vindo ao Quiz de Futebol!
+                <br><br>
+                Teste seus conhecimentos sobre futebol,
+                jogadores, seleções, Copas do Mundo e regras.
+                <br><br>
+                Escolha uma resposta e descubra se você acertou!
+            </p>
 
-    <section class="card">
-      <h2>🧠 Dicas de segurança</h2>
-      <ul>
-        <li>Use pelo menos 8 caracteres</li>
-        <li>Combine letras, números e símbolos</li>
-        <li>Evite dados pessoais</li>
-        <li>Não repita senhas em sites diferentes</li>
-      </ul>
-    </section>
+            <button class="iniciar-btn">Iniciar</button>
 
-  </main>
+        </div>
 
-  <footer>
-    <p>Projeto educacional - Start by Alura</p>
-  </footer>
+        <div class="caixa-perguntas"></div>
 
-  <script src="java.js"></script>
+        <div class="caixa-alternativas"></div>
+
+        <div class="caixa-resultado">
+
+            <p class="texto-resultado"></p>
+
+            <button class="novamente-btn">
+                🔄 Tentar novamente
+            </button>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/aleatorio.js"></script>
+    <script type="module" src="js/perguntas.js"></script>
+    <script type="module" src="js/script.js"></script>
+
 </body>
+
 </html>
